@@ -1,0 +1,29 @@
+{
+  "name": "front-end-grocery-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "react-dev": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+  },
+  "author": "Josh Hertz",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "nodemon": "^2.0.14",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
