@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
+// const router = require('./routes');
 const models = require('./models');
-const port = 3000;
+const port = 3006;
 
 app.get('/', (req, res) => {
   res.send('hello world');

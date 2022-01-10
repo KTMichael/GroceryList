@@ -1,10 +1,9 @@
 // make connection with database
 const mysql = require('mysql');
-const { password } = require('./dbpassword.js');
 
 const dbConnection = mysql.createConnection({
   user: 'root',
-  password: `${password}`,
+  password: 'Kmpg1822.',
   database: 'gList'
 });
 
