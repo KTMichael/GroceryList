@@ -19,7 +19,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://127.0.0.1:3000/gList")
+      .get("http://127.0.0.1:8080/gList")
       .then((res) => {
         console.log(res.data);
         this.setState({
@@ -39,7 +39,7 @@ class App extends React.Component {
       ...this.state.groceryList,
     ];
     axios
-      .post("http://127.0.0.1:3000/gList", {
+      .post("http://127.0.0.1:8080/gList", {
         name: this.state.name,
         quantity: this.state.quantity,
       })
@@ -72,7 +72,7 @@ class App extends React.Component {
   }
 
   handleDelete(itemName) {
-    axios.delete("http://127.0.0.1:3000/gList", {
+    axios.delete("http://127.0.0.1:8080/gList", {
       data: { name: itemName },
     });
     this.setState({
@@ -100,9 +100,9 @@ class App extends React.Component {
             type="number"
             value={this.state.quantity}
             onChange={this.handleAddQuantity}
-          ></input>
-          <button  className="addItemBtn" type="submit">Add Grocery</button>
+          ></input> <button  className="addItemBtn" type="submit">Add Grocery</button>
         </form>
+
         <GroceryList
           gList={this.state.groceryList}
           handleDelete={this.handleDelete}

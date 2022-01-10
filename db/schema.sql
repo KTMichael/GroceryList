@@ -9,3 +9,8 @@ CREATE TABLE groceryList (
   quantity INT NOT NULL,
   PRIMARY KEY(id)
 )
+
+-- mysql -u root -p < db/schema.sql
+-- mysql -u root -p < schema.sql
+-- sign into mysql shell
+-- mysql -u root -p

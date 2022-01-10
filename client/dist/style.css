@@ -10,21 +10,21 @@ body {
   text-align: center;
 }
 .gListTitle {
-  padding: 2%;
+  padding: 1%;
   background-color: #373b44;
   border-style: solid;
   border-radius: 10px;
   border-width: 5px;
   border-color: #c6c6c6;
   color: #fff;
-  font-size: 7vw;
+  font-size: 5rem;
   font-family: "Roboto", sans-serif;
 }
 
 .pic {
   width: 30%;
   height: auto;
-  margin-bottom: 7%;
+  margin-bottom: 1%;
 }
 
 .itemLab {
@@ -60,27 +60,48 @@ body {
   margin-bottom: 5%;
 }
 
+.addItemBtn {
+  align-items: center;
+  background-color: #373b44;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #c6c6c6;
+  margin-left: 1%;
+}
+
 .addItemBtn:hover {
   background-color: #fff;
   color: #373b44;
   cursor: pointer;
 }
 
-.addItemBtn {
+button.deleteBtn {
   background-color: #373b44;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 2vw;
+  font-size: 1vw;
   border-style: solid;
-  border-radius: 10px;
-  border-width: 5px;
+  border-radius: 5px;
+  border-width: 2px;
   border-color: #c6c6c6;
-  margin-left: 1%;
+  padding: 10px;
+}
+
+button.deleteBtn:hover {
+  background-color: #fff;
+  color: #373b44;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .gList {
   width: 75%;
   min-height: 20%;
+  height: 40%;
   padding: 2%;
   text-align: center;
   font-family: "Architects Daughter";
@@ -94,4 +115,13 @@ body {
   list-style-position: inside;
   list-style-type: "\21A0";
   margin: auto;
+  overflow-y: scroll;
+}
+
+.list {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
