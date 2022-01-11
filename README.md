@@ -10,7 +10,7 @@ A single-page app to help users create grocery lists.
 This simple app allows you to add items and their quantity to your list and delete them if need be. The list persists via the database, so your list will repopulate if the app is closed and then reopened.
 
 ## Demo
-
+![Demo](https://raw.githubusercontent.com/KTMichael/GroceryList/main/gif.gif)
 ## Installation
   - Everything below takes place in terminal
 ### Step 1
